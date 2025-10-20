@@ -23,26 +23,61 @@ if [[ -n "${SNAP}" ]] || [[ -n "${SNAP_NAME}" ]] || [[ "$0" == *"/snap/"* ]]; th
     exit 1
 fi
 
-# Fix for snap library conflicts
-unset LD_PRELOAD
+# Completely clear snap-related environment variables
+unset SNAP
+unset SNAP_NAME
+unset SNAP_INSTANCE_NAME
+unset SNAP_REVISION
+unset SNAP_VERSION
+unset SNAP_REAL_HOME
+unset SNAP_USER_DATA
+unset SNAP_USER_COMMON
+unset SNAP_COMMON
+unset SNAP_DATA
+unset SNAP_ARCH
+unset SNAP_LIBRARY_PATH
+
+# Force the system pthread library to override snap's
+export LD_PRELOAD=/lib/x86_64-linux-gnu/libpthread.so.0
 
 # Source ROS 2 first
 source /opt/ros/jazzy/setup.bash
 source ~/turtlebot3_ws/install/setup.bash
 
-# Now prepend system libraries to take priority over any snap libraries
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+# Completely rebuild LD_LIBRARY_PATH without any snap references
+# Start with system libraries
+NEW_LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/usr/local/lib"
 
-# Remove snap paths if they exist
-if [[ ":$LD_LIBRARY_PATH:" == *":/snap/"* ]]; then
-    LD_LIBRARY_PATH=$(echo "$LD_LIBRARY_PATH" | tr ':' '\n' | grep -v '/snap/' | tr '\n' ':' | sed 's/:$//')
-    export LD_LIBRARY_PATH
+# Add ROS libraries (filter out any snap paths)
+if [[ -n "$LD_LIBRARY_PATH" ]]; then
+    for path in $(echo "$LD_LIBRARY_PATH" | tr ':' ' '); do
+        if [[ "$path" != *"/snap/"* ]] && [[ -d "$path" ]]; then
+            NEW_LD_LIBRARY_PATH="$NEW_LD_LIBRARY_PATH:$path"
+        fi
+    done
 fi
+
+export LD_LIBRARY_PATH="$NEW_LD_LIBRARY_PATH"
+
+# Also clean PATH to remove snap
+NEW_PATH=""
+for path in $(echo "$PATH" | tr ':' ' '); do
+    if [[ "$path" != *"/snap/"* ]]; then
+        if [[ -z "$NEW_PATH" ]]; then
+            NEW_PATH="$path"
+        else
+            NEW_PATH="$NEW_PATH:$path"
+        fi
+    fi
+done
+export PATH="$NEW_PATH"
 
 # Set TurtleBot model
 export TURTLEBOT3_MODEL=burger
 
 echo "✓ Environment configured"
+echo "✓ LD_LIBRARY_PATH cleaned (no snap libraries)"
+echo "✓ LD_PRELOAD set to force system pthread"
 echo "✓ Starting ROS2 SLAM simulation..."
 echo ""
 
