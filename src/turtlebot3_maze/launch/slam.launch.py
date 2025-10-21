@@ -44,8 +44,9 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={
-            'x_pose': '1.0',
-            'y_pose': '1.0',
+            'x_pose': '1.5',
+            'y_pose': '1.5',
+            'z_pose': '0.05',
             'world': world_file,
             'use_sim_time': use_sim_time
         }.items()
