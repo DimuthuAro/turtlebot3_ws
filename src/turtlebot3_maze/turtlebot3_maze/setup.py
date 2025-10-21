@@ -33,6 +33,7 @@ setup(
             'dqn_navigation = turtlebot3_maze.dqn_navigation:main',
             'performance_tester = turtlebot3_maze.performance_tester:main',
             'goal_navigator = turtlebot3_maze.goal_navigator:main',
+            'simple_auto_navigator = turtlebot3_maze.simple_auto_navigator:main',
         ],
     },
 )

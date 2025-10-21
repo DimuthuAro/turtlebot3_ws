@@ -13,6 +13,7 @@
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_gui.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/performance_tester.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/setup.py
+/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/simple_auto_navigator.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/autonomous_navigation.launch.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/dqn_navigation.launch.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/gazebo_only.launch.py
