@@ -1,0 +1,90 @@
+[0.062s] Invoking command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ayesh/turtlebot3_ws/src/turtlebot3_maze -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ayesh/turtlebot3_ws/install/turtlebot3_maze
+[0.624s] -- The C compiler identification is GNU 11.4.0
+[1.080s] -- The CXX compiler identification is GNU 11.4.0
+[1.132s] -- Detecting C compiler ABI info
+[1.340s] -- Detecting C compiler ABI info - done
+[1.350s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.354s] -- Detecting C compile features
+[1.359s] -- Detecting C compile features - done
+[1.373s] -- Detecting CXX compiler ABI info
+[1.716s] -- Detecting CXX compiler ABI info - done
+[1.728s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.731s] -- Detecting CXX compile features
+[1.734s] -- Detecting CXX compile features - done
+[1.754s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.254s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.484s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.080s] -- Configuring done
+[3.088s] -- Generating done
+[3.097s] -- Build files have been written to: /home/ayesh/turtlebot3_ws/build/turtlebot3_maze
+[3.118s] Invoked command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ayesh/turtlebot3_ws/src/turtlebot3_maze -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ayesh/turtlebot3_ws/install/turtlebot3_maze
+[3.119s] Invoking command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ayesh/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
+[3.330s] Built target ament_cmake_python_symlink_turtlebot3_maze
+[3.874s] running egg_info
+[3.874s] creating turtlebot3_maze.egg-info
+[3.874s] writing turtlebot3_maze.egg-info/PKG-INFO
+[3.875s] writing dependency_links to turtlebot3_maze.egg-info/dependency_links.txt
+[3.875s] writing top-level names to turtlebot3_maze.egg-info/top_level.txt
+[3.876s] writing manifest file 'turtlebot3_maze.egg-info/SOURCES.txt'
+[3.892s] reading manifest file 'turtlebot3_maze.egg-info/SOURCES.txt'
+[3.897s] writing manifest file 'turtlebot3_maze.egg-info/SOURCES.txt'
+[4.044s] Built target ament_cmake_python_build_turtlebot3_maze_egg
+[4.080s] Invoked command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ayesh/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
+[4.114s] Invoking command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ayesh/turtlebot3_ws/build/turtlebot3_maze
+[4.144s] -- Install configuration: ""
+[4.144s] -- Execute custom install script
+[4.148s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/pythonpath.sh
+[4.175s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/pythonpath.dsv
+[4.201s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info/PKG-INFO
+[4.226s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info/SOURCES.txt
+[4.258s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info/dependency_links.txt
+[4.279s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info/top_level.txt
+[4.307s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/__init__.py
+[4.333s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_agent.py
+[4.362s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_navigation.py
+[4.391s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/generate_assignment_maze.py
+[4.418s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_generator.py
+[4.456s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_gui.py
+[4.498s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/performance_tester.py
+[4.534s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/setup.py
+[4.580s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/dqn_navigation.launch.py
+[4.625s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/gazebo_only.launch.py
+[4.667s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/navigation.launch.py
+[4.701s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/slam.launch.py
+[4.735s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/test_headless.launch.py
+[4.778s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/dqn_config.yaml
+[4.815s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/nav2_params.yaml
+[4.878s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/slam_params.yaml
+[4.911s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/empty.world
+[4.948s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/final_maze.world
+[4.981s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_assignment.world
+[5.011s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_complex.world
+[5.035s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_simple.world
+[5.066s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/navigation.rviz
+[5.097s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/slam.rviz
+[5.125s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/models/.gitkeep
+[5.146s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze
+[5.173s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze
+[5.216s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/ament_prefix_path.sh
+[5.268s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/ament_prefix_path.dsv
+[5.303s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/path.sh
+[5.336s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/path.dsv
+[5.371s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.bash
+[5.412s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.sh
+[5.447s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.zsh
+[5.488s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.dsv
+[5.539s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/package.dsv
+[5.576s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/packages/turtlebot3_maze
+[5.611s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/cmake/turtlebot3_mazeConfig.cmake
+[5.650s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/cmake/turtlebot3_mazeConfig-version.cmake
+[5.673s] -- Symlinking: /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/package.xml
+[5.821s] Listing '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/__init__.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_agent.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_navigation.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/generate_assignment_maze.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_generator.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_gui.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/performance_tester.py'...
+[5.822s] Compiling '/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/setup.py'...
+[5.872s] Invoked command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ayesh/turtlebot3_ws/build/turtlebot3_maze

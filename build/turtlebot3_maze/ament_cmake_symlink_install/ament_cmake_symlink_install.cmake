@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/${destination}")
+      set(destination "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,71 +310,71 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(DIRECTORY "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze.egg-info/" "DESTINATION" "lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze.egg-info/" "DESTINATION" "lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info")
+# install(DIRECTORY "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlebot3_maze-1.2.0-py3.10.egg-info")
 
-# install(DIRECTORY "/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze/turtlebot3_maze/" "DESTINATION" "lib/python3.12/site-packages/turtlebot3_maze" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze/turtlebot3_maze/" "DESTINATION" "lib/python3.12/site-packages/turtlebot3_maze" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/turtlebot3_maze/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlebot3_maze" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/turtlebot3_maze/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlebot3_maze" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "launch" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "launch" "DESTINATION" "share/turtlebot3_maze")
 
 # install(DIRECTORY "config" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "config" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "config" "DESTINATION" "share/turtlebot3_maze")
 
 # install(DIRECTORY "worlds" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "worlds" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "worlds" "DESTINATION" "share/turtlebot3_maze")
 
 # install(DIRECTORY "rviz" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "rviz" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "rviz" "DESTINATION" "share/turtlebot3_maze")
 
 # install(DIRECTORY "models" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_directory("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "models" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_directory("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" DIRECTORY "models" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/turtlebot3_maze/environment")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/turtlebot3_maze")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_maze" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig.cmake" "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig-version.cmake" "DESTINATION" "share/turtlebot3_maze/cmake")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig.cmake" "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig-version.cmake" "DESTINATION" "share/turtlebot3_maze/cmake")
+# install(FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig.cmake" "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig-version.cmake" "DESTINATION" "share/turtlebot3_maze/cmake")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig.cmake" "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_core/turtlebot3_mazeConfig-version.cmake" "DESTINATION" "share/turtlebot3_maze/cmake")
 
-# install(FILES "/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze/package.xml" "DESTINATION" "share/turtlebot3_maze")
-ament_cmake_symlink_install_files("/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze/package.xml" "DESTINATION" "share/turtlebot3_maze")
+# install(FILES "/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/package.xml" "DESTINATION" "share/turtlebot3_maze")
+ament_cmake_symlink_install_files("/home/ayesh/turtlebot3_ws/src/turtlebot3_maze" FILES "/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/package.xml" "DESTINATION" "share/turtlebot3_maze")

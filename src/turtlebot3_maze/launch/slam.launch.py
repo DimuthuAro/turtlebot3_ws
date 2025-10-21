@@ -34,31 +34,21 @@ def generate_launch_description():
         description='Use simulation time'
     )
     
-    # Gazebo launch
-    gazebo_launch = IncludeLaunchDescription(
+    # Launch Gazebo with world file and TurtleBot3
+    gazebo_turtlebot = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
-                get_package_share_directory('ros_gz_sim'),
+                get_package_share_directory('turtlebot3_gazebo'),
                 'launch',
-                'gz_sim.launch.py'
+                'turtlebot3_world.launch.py'
             ])
         ]),
         launch_arguments={
-            'gz_args': [world_file, ' -r'],
-            'on_exit_shutdown': 'true'
+            'x_pose': '1.0',
+            'y_pose': '1.0',
+            'world': world_file,
+            'use_sim_time': use_sim_time
         }.items()
-    )
-    
-    # Spawn TurtleBot3
-    spawn_entity = Node(
-        package='ros_gz_sim',
-        executable='create',
-        arguments=[
-            '-name', 'turtlebot3_burger',
-            '-x', '1.0', '-y', '1.0', '-z', '0.1',
-            '-topic', '/robot_description'
-        ],
-        output='screen'
     )
     
     # SLAM Toolbox
@@ -100,8 +90,7 @@ def generate_launch_description():
         ld_preload_unset,
         declare_world_arg,
         declare_use_sim_time_arg,
-        gazebo_launch,
-        spawn_entity,
+        gazebo_turtlebot,
         slam_toolbox,
         rviz_node
     ])

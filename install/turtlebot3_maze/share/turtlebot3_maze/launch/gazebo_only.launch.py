@@ -1,1 +1,1 @@
-/home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze/launch/gazebo_only.launch.py
+/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/launch/gazebo_only.launch.py

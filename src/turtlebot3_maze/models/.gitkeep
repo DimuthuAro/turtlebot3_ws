@@ -1,0 +1,2 @@
+# Pre-trained DQN models will be stored here
+# The DQN navigation system will look for dqn_trained.pth in this directory

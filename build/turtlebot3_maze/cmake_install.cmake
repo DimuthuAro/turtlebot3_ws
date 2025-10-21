@@ -1,8 +1,8 @@
-# Install script for directory: /home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze
+# Install script for directory: /home/ayesh/turtlebot3_ws/src/turtlebot3_maze
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze")
+  set(CMAKE_INSTALL_PREFIX "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -42,15 +42,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze"
+        "/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze"
       )
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
