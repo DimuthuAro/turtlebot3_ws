@@ -23,7 +23,7 @@ def generate_launch_description():
         default_value=PathJoinSubstitution([
             get_package_share_directory('turtlebot3_maze'),
             'worlds',
-            'maze_assignment.world'
+            'square_maze.world'
         ]),
         description='Gazebo world file to load'
     )
@@ -44,8 +44,8 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={
-            'x_pose': '1.5',
-            'y_pose': '1.5',
+            'x_pose': '0.5',
+            'y_pose': '0.5',
             'z_pose': '0.05',
             'world': world_file,
             'use_sim_time': use_sim_time

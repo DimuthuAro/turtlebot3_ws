@@ -8,10 +8,12 @@
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_agent.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/dqn_navigation.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/generate_assignment_maze.py
+/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/goal_navigator.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_generator.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/maze_gui.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/performance_tester.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/local/lib/python3.10/dist-packages/turtlebot3_maze/setup.py
+/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/autonomous_navigation.launch.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/dqn_navigation.launch.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/gazebo_only.launch.py
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/navigation.launch.py
@@ -25,6 +27,7 @@
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_assignment.world
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_complex.world
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_simple.world
+/home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/square_maze.world
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/navigation.rviz
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/slam.rviz
 /home/ayesh/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/models/.gitkeep

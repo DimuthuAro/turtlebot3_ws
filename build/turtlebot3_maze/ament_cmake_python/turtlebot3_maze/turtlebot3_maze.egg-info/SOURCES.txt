@@ -3,6 +3,7 @@ turtlebot3_maze/__init__.py
 turtlebot3_maze/dqn_agent.py
 turtlebot3_maze/dqn_navigation.py
 turtlebot3_maze/generate_assignment_maze.py
+turtlebot3_maze/goal_navigator.py
 turtlebot3_maze/maze_generator.py
 turtlebot3_maze/maze_gui.py
 turtlebot3_maze/performance_tester.py
