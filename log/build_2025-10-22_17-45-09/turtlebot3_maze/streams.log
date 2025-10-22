@@ -1,0 +1,67 @@
+[0.019s] Invoking command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
+[0.185s] Built target ament_cmake_python_copy_turtlebot3_maze
+[0.216s] Built target ament_cmake_python_copy_turtlebot3_maze_setup
+[0.445s] running egg_info
+[0.503s] writing turtlebot3_maze.egg-info/PKG-INFO
+[0.503s] writing dependency_links to turtlebot3_maze.egg-info/dependency_links.txt
+[0.503s] writing top-level names to turtlebot3_maze.egg-info/top_level.txt
+[0.695s] reading manifest file 'turtlebot3_maze.egg-info/SOURCES.txt'
+[0.695s] writing manifest file 'turtlebot3_maze.egg-info/SOURCES.txt'
+[0.796s] Built target ament_cmake_python_build_turtlebot3_maze_egg
+[0.820s] Invoked command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
+[0.890s] Invoking command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze
+[0.929s] -- Install configuration: ""
+[0.933s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/pythonpath.sh
+[0.935s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/pythonpath.dsv
+[0.935s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info
+[0.935s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info/dependency_links.txt
+[0.935s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info/PKG-INFO
+[0.935s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info/SOURCES.txt
+[0.937s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze-1.2.0-py3.12.egg-info/top_level.txt
+[0.937s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze
+[0.937s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/__init__.py
+[0.937s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/simple_auto_navigator.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/dqn_agent.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/dqn_navigation.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/goal_navigator.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/maze_gui.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/maze_generator.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/performance_tester.py
+[0.938s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze/generate_assignment_maze.py
+[0.996s] Listing '/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/python3.12/site-packages/turtlebot3_maze'...
+[1.002s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/maze_gui.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/generate_assignment_maze.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/dqn_navigation.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/performance_tester.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/goal_navigator.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/lib/turtlebot3_maze/simple_auto_navigator.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/slam.launch.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/launch/autonomous_navigation.launch.py
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config
+[1.009s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/nav2_params.yaml
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/dqn_config.yaml
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/config/slam_params.yaml
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds
+[1.009s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/worlds/maze_assignment.world
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/slam.rviz
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/rviz/navigation.rviz
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/models
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/models/.gitkeep
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/parent_prefix_path/turtlebot3_maze
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/ament_prefix_path.sh
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/ament_prefix_path.dsv
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/path.sh
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/environment/path.dsv
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.bash
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.sh
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.zsh
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/local_setup.dsv
+[1.010s] -- Installing: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/package.dsv
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/ament_index/resource_index/packages/turtlebot3_maze
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/cmake/turtlebot3_mazeConfig.cmake
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/cmake/turtlebot3_mazeConfig-version.cmake
+[1.010s] -- Up-to-date: /home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze/share/turtlebot3_maze/package.xml
+[1.014s] Invoked command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze

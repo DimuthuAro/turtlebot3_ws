@@ -41,29 +41,72 @@ def generate_launch_description():
     slam_toolbox_dir = get_package_share_directory('slam_toolbox')
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     
-    # World file
+    # World file - use Pacman-style maze
     world_file = PathJoinSubstitution([
         turtlebot3_maze_dir,
         'worlds',
-        'square_maze.world'
+        'maze_assignment.world'
     ])
     
-    # 1. Launch Gazebo with TurtleBot3
-    gazebo_turtlebot = IncludeLaunchDescription(
+    # 1. Launch Gazebo (use ros_gz_sim directly so we can pass our custom world)
+    ros_gz_sim_dir = get_package_share_directory('ros_gz_sim')
+
+    # gzserver (headless) with our world
+    gzserver_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                ros_gz_sim_dir,
+                'launch',
+                'gz_sim.launch.py'
+            ])
+        ]),
+        launch_arguments={
+            'gz_args': ['-r -s -v2 ', world_file],
+            'on_exit_shutdown': 'true'
+        }.items()
+    )
+
+    # gzclient (GUI)
+    gzclient_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                ros_gz_sim_dir,
+                'launch',
+                'gz_sim.launch.py'
+            ])
+        ]),
+        launch_arguments={
+            'gz_args': '-g -v2 ',
+            'on_exit_shutdown': 'true'
+        }.items()
+    )
+
+    # Spawn TurtleBot3 using the package's spawn launch
+    spawn_turtlebot = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
                 turtlebot3_gazebo_dir,
                 'launch',
-                'turtlebot3_world.launch.py'
+                'spawn_turtlebot3.launch.py'
             ])
         ]),
         launch_arguments={
             'x_pose': '0.5',
             'y_pose': '0.5',
-            'z_pose': '0.05',
-            'world': world_file,
-            'use_sim_time': 'true'
+            'z_pose': '0.05'
         }.items()
+    )
+
+    # Robot state publisher (reuse turtlebot3 spawn's publisher or include separately if needed)
+    robot_state_publisher = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                turtlebot3_gazebo_dir,
+                'launch',
+                'robot_state_publisher.launch.py'
+            ])
+        ]),
+        launch_arguments={'use_sim_time': 'true'}.items()
     )
     
     # 2. Launch SLAM Toolbox
@@ -124,7 +167,7 @@ def generate_launch_description():
     
     # 5. Goal Navigator (delayed start to allow Nav2 to initialize)
     goal_navigator = TimerAction(
-        period=10.0,  # Wait 10 seconds for Nav2 to be ready
+        period=20.0,  # Wait longer for Nav2 to be ready (increased from 12s)
         actions=[
             Node(
                 package='turtlebot3_maze',
@@ -139,9 +182,12 @@ def generate_launch_description():
     return LaunchDescription([
         ld_preload_unset,
         declare_use_sim_time_arg,
-        gazebo_turtlebot,
+        gzserver_cmd,
+        gzclient_cmd,  # Re-enabled: Gazebo GUI
+        spawn_turtlebot,
+        robot_state_publisher,
         slam_toolbox,
         nav2_bringup,
-        rviz_node,
-        goal_navigator
+        rviz_node,  # Re-enabled: RViz visualization
+        goal_navigator  # Re-enabled: Autonomous goal navigator
     ])

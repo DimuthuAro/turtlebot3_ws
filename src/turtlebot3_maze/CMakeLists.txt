@@ -22,6 +22,17 @@ find_package(ament_cmake_python REQUIRED)
 # Include Python files
 ament_python_install_package(${PROJECT_NAME})
 
+# Install Python scripts
+install(PROGRAMS
+  turtlebot3_maze/maze_gui.py
+  turtlebot3_maze/generate_assignment_maze.py
+  turtlebot3_maze/dqn_navigation.py
+  turtlebot3_maze/performance_tester.py
+  turtlebot3_maze/goal_navigator.py
+  turtlebot3_maze/simple_auto_navigator.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 # Install launch files
 install(DIRECTORY
   launch

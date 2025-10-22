@@ -1,1 +1,2 @@
-/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/models/.gitkeep
+# Pre-trained DQN models will be stored here
+# The DQN navigation system will look for dqn_trained.pth in this directory

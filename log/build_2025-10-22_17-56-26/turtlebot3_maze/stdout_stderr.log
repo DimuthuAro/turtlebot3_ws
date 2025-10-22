@@ -1,0 +1,10 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze
+Built target ament_cmake_python_symlink_turtlebot3_maze_setup
+failed to create symbolic link '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

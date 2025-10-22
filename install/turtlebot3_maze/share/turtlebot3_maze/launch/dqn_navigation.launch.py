@@ -1,1 +1,0 @@
-/home/ayesh/turtlebot3_ws/src/turtlebot3_maze/launch/dqn_navigation.launch.py

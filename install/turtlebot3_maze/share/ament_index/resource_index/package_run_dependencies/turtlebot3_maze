@@ -1,1 +1,1 @@
-/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_maze
+rclpy;std_msgs;geometry_msgs;nav_msgs;sensor_msgs;tf2_ros;visualization_msgs;turtlebot3_gazebo;turtlebot3_navigation2;slam_toolbox;nav2_bringup;python3-numpy;python3-pytorch;python3-matplotlib;python3-tkinter

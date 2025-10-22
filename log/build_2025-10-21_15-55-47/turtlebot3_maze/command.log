@@ -1,4 +1,0 @@
-Invoking command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ayesh/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
-Invoked command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ayesh/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
-Invoking command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ayesh/turtlebot3_ws/build/turtlebot3_maze
-Invoked command in '/home/ayesh/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ayesh/turtlebot3_ws/build/turtlebot3_maze

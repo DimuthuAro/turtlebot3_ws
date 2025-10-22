@@ -1,1 +1,1 @@
-/home/ayesh/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_environment_hooks/pythonpath.dsv
+prepend-non-duplicate;PYTHONPATH;lib/python3.12/site-packages

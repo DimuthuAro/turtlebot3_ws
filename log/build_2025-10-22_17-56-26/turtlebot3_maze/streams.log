@@ -1,0 +1,14 @@
+[0.044s] Invoking command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze
+[0.121s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.943s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.334s] -- Configuring done (1.2s)
+[1.367s] -- Generating done (0.0s)
+[1.393s] -- Build files have been written to: /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze
+[1.410s] Invoked command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dimuthuaro/turtlebot3_ws/src/turtlebot3_maze -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dimuthuaro/turtlebot3_ws/install/turtlebot3_maze
+[1.411s] Invoking command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
+[1.697s] Built target ament_cmake_python_symlink_turtlebot3_maze_setup
+[1.797s] failed to create symbolic link '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze/ament_cmake_python/turtlebot3_maze/turtlebot3_maze' because existing path cannot be removed: Is a directory
+[1.797s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze] Error 1
+[1.797s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ament_cmake_python_symlink_turtlebot3_maze.dir/all] Error 2
+[1.797s] gmake: *** [Makefile:146: all] Error 2
+[1.813s] Invoked command in '/home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dimuthuaro/turtlebot3_ws/build/turtlebot3_maze -- -j2 -l2
